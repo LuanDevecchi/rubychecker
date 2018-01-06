@@ -2,7 +2,7 @@ require 'uri'
 require 'net/http'
 
 
-uri = URI('https://www.pedidosja.com.br/user/doLogin')
+uri = URI('http://localhost/auth/doLogin.php')
 
 
 
